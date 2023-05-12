@@ -7,6 +7,7 @@ exclude:
   - .jekyll-cache
   - _site
   - .idea
+  - README.md
 
 # Jekyll settings
 collections_dir: docs
