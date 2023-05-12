@@ -21,7 +21,7 @@ module Jekyll
       true_src = context[@src] rescue @src
       true_alt = context[@alt] rescue @alt
 
-      "<img src='/assets/images/#{true_src}' alt='#{true_alt}'>"
+      "<img src='assets/images/#{true_src}' alt='#{true_alt}'>"
     end
   end
 end
