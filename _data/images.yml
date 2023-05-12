@@ -1,0 +1,13 @@
+alt:
+  channel_points:
+    auto: >
+      Two pages with text stacked on top of each other with a small X in the
+      top-right corner.
+    delete: A large X.
+    enable: >
+      A lightning bolt symbol with a small checkmark, or an x, in the top-right
+      corner.
+    settings: >
+      A menu with text boxes, buttons, and an important note at the top.
+  lootboxes:
+    settings: A menu with a slider, checkboxes, and a text box.

@@ -1,0 +1,12 @@
+harmony:
+  id: 2009463077
+  name: Harmony
+core:
+  id: 2018368654
+  name: ToolkitCore
+ttk:
+  id: 1718525787
+  name: Twitch Toolkit
+utils:
+  id: 2009500580
+  name: ToolkitUtils

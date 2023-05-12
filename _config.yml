@@ -1,0 +1,50 @@
+title: Toolkit Docs
+description: The documentation for Twitch Toolkit, an interactivity mod for the game "RimWorld".
+theme: just-the-docs
+discord_url: https://discord.gg/rEYEFhb
+
+exclude:
+  - .jekyll-cache
+  - _site
+  - .idea
+
+# Jekyll settings
+collections_dir: docs
+
+collections:
+  addons:
+    permalink: "/:collection/:path"
+    output: true
+  setup:
+    permalink: "/:collection/:path"
+    output: true
+
+defaults:
+  - scope:
+      type: "addons"
+    values:
+      layout: "addon"
+
+# Just the Docs settings
+just_the_docs:
+  collections:
+    setup:
+      name: Getting Started
+    addons:
+      name: Addons
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red

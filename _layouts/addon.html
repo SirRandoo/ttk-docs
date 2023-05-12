@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% include addon_header.html
+        name=page.title
+        id=page.addon_id
+        author=page.addon_author
+        gh_author=page.github_author
+        gh_repo=page.github_repository %}
+
+{{ content }}

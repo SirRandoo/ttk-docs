@@ -1,0 +1,18 @@
+{% assign workshop_link = "https://steamcommunity.com/sharedfiles/filedetails?id=" | append: include.id %}
+
+<div style="display: flex; align-items: baseline">
+    <h1>
+        <a href="{{ workshop_link }}">{{ include.name }}</a>
+    </h1>
+    <pre style="padding-left: 8px">by {{ include.author }}</pre>
+</div>
+<div>
+    <a href="{{ workshop_link }}">
+        <img alt="Steam Update Date"
+             src="https://img.shields.io/steam/update-date/{{ include.id }}?style=for-the-badge">
+    </a>
+    <a href="https://github.com/{{ include.gh_author }}/{{ include.gh_repo }}/commits">
+        <img alt="GitHub last commit"
+             src="https://img.shields.io/github/last-commit/{{ include.gh_author }}/{{ include.gh_repo }}?style=for-the-badge">
+    </a>
+</div>
