@@ -1,0 +1,20 @@
+installation:
+  - name: Mods
+    is_folder: true
+    children:
+      - name: ToolkitCore
+        is_folder: true
+        children:
+          - name: About
+            is_folder: true
+            children:
+              - name: About.xml
+                is_folder: false
+      - name: Twitch Toolkit
+        is_folder: true
+        children:
+          - name: About
+            is_folder: true
+            children:
+              - name: About.xml
+                is_folder: false

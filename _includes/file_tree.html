@@ -1,0 +1,17 @@
+<div class="file-tree" style="padding-left: 15px; border-left: 1px solid lightgray">
+        {% for node in include.structure %}
+                <span>
+            {% if node.is_folder %}
+                    📂
+            {% else %}
+                    📄
+            {% endif %}
+
+                        {{ node.name }}
+        </span>
+
+                {% if node.children %}
+                        {% include file_tree.html structure=node.children %}
+                {% endif %}
+        {% endfor %}
+</div>
