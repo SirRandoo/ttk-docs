@@ -1,17 +1,40 @@
-<div class="file-tree" style="padding-left: 1rem; border-left: 1px solid lightgray">
+<style>
+    .file-tree {
+        padding-left: 1rem;
+    }
+
+    .file-tree span {
+        padding-left: 1rem;
+        border-left: thin solid lightgray;
+    }
+
+    .file-tree-node {
+        padding-left: 1rem;
+        border-left: thin solid lightgray;
+    }
+</style>
+
+{% assign class = "" %}
+{% if include.child %}
+    {% assign class = "file-tree-node" %}
+{% else %}
+    {% assign class = "file-tree" %}
+{% endif %}
+
+<div class="{{ class }}">
     {% for node in include.structure %}
-                <span>
+        <span>
             {% if node.is_folder %}
-                    📂
+                📂
             {% else %}
-                    📄
+                📄
             {% endif %}
 
-                        {{ node.name }}
+            {{ node.name }}
         </span>
 
-                {% if node.children %}
-                        {% include file_tree.html structure=node.children %}
-                {% endif %}
-        {% endfor %}
+        {% if node.children %}
+            {% include file_tree.html structure=node.children child=true %}
+        {% endif %}
+    {% endfor %}
 </div>
