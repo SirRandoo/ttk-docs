@@ -1,10 +1,10 @@
 {% assign workshop_link = "https://steamcommunity.com/sharedfiles/filedetails?id=" | append: include.id %}
 
-<div style="display: flex; align-items: baseline">
+<div class="addon-header">
     <h1>
         <a href="{{ workshop_link }}">{{ include.name }}</a>
     </h1>
-    <pre style="padding-left: 8px">by {{ include.author }}</pre>
+    <pre>by {{ include.author }}</pre>
 </div>
 <div>
     <a href="{{ workshop_link }}">

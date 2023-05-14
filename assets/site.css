@@ -1,0 +1,38 @@
+/* File tree */
+.file-tree {
+    padding-left: 1rem;
+}
+
+.file-tree span {
+    padding-left: 1rem;
+    border-left: thin solid lightgray;
+}
+
+.file-tree-node {
+    padding-left: 1rem;
+    border-left: thin solid lightgray;
+}
+
+
+/* Icons */
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/* Monospace */
+.monospaced {
+    font-family: 'Lucida Console', monospace;
+    font-size: 1rem;
+}
+
+/* Addon header */
+.addon-header {
+    display: flex;
+    align-items: baseline;
+}
+
+.addon-header > pre {
+    padding-left: 0.5rem;
+}

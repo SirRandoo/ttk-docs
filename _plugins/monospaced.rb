@@ -9,7 +9,7 @@ module Jekyll
     end
 
     def render(context)
-      "<span style=\"font-family: 'Lucida Console', monospace; font-size: 14px\">#{@text}</span>"
+      "<span class='monospaced'>#{@text}</span>"
     end
   end
 end

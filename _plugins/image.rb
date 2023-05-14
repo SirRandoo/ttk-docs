@@ -20,8 +20,9 @@ module Jekyll
     def render(context)
       true_src = context[@src] rescue @src
       true_alt = context[@alt] rescue @alt
+      relative_path = Liquid::Template.parse("/assets/images/#{true_src}").render(context)
 
-      "<img loading='lazy' src='./assets/images/#{true_src}' alt='#{true_alt}'>"
+      "<img loading='lazy' src='#{relative_path}' alt='#{true_alt}'>"
     end
   end
 end
