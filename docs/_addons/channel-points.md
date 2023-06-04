@@ -7,14 +7,14 @@ github_repository: Toolkit---ChannelPoints
 ---
 
 {{ page.title }} is an addon for
-{% workshop id: site.mods.ttk.id, name: site.data.mods.ttk.name %}. This addon
-gives viewers the ability to convert their channel points into
+{% workshop id: site.data.mods.ttk.id, name: site.data.mods.ttk.name %}. This
+addon gives viewers the ability to convert their channel points into
 {{ site.data.mods.ttk.name }}'s currency through channel redeems. The settings
 menu for the addon will look something like this:
 
 {% image
-        src: "channel-points-settings.png",
-        alt: site.data.images.alt.channel_points.settings %}
+    src: "channel-points-settings.png",
+    alt: site.data.images.alt.channel_points.settings %}
 
 The first thing you might've noticed is the important note at the top of the
 settings menu. What this means is every channel point redeem you create that you
