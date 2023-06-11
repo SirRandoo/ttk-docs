@@ -10,3 +10,12 @@ ttk:
 utils:
   id: 2009500580
   name: ToolkitUtils
+polls:
+  id: 2435838514
+  name: ToolkitPolls
+raids:
+  id: 2091359241
+  name: ToolkitRaids
+research:
+  id: 2312827542
+  name: ToolkitResearch

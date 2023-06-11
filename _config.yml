@@ -19,10 +19,17 @@ collections:
   setup:
     permalink: "/:collection/:path"
     output: true
+  core_addons:
+    permalink: "/:collection/:path"
+    output: true
 
 defaults:
   - scope:
       type: "addons"
+    values:
+      layout: "addon"
+  - scope:
+      type: "core_addons"
     values:
       layout: "addon"
 
@@ -33,6 +40,8 @@ just_the_docs:
       name: Getting Started
     addons:
       name: Addons
+    core_addons:
+      name: ToolkitCore Addons
 
 callouts:
   highlight:
