@@ -2,6 +2,12 @@
 layout: table_wrappers
 ---
 
+{% assign mainContentPadding = 0 %}
+{% if page.parent %}
+    {% assign mainContentPadding = 1 %}
+{% endif %}
+
+
 <!DOCTYPE html>
 
 <html lang="{{ site.lang | default: 'en-US' }}">
@@ -12,7 +18,7 @@ layout: table_wrappers
 {% include components/sidebar.html %}
 <div class="main" id="top">
     {% include components/header.html %}
-    <div id="main-content-wrap" class="main-content-wrap" style="padding-top: 0">
+    <div id="main-content-wrap" class="main-content-wrap" style="padding-top: {{ mainContentPadding }}rem;">
         {% include components/breadcrumbs.html %}
         <div id="main-content" class="main-content">
             <main>
