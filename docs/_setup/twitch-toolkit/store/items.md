@@ -47,6 +47,15 @@ certain items, but you can usually find the same 3 settings in most cases.
 name means that viewers have to use the new name in order to purchase the
 item.
 
+## Using the Filter Menu
+
+The filter menu for the item store allows you to filter what's visible within
+the item store. You can access the filter menu by clicking the
+{% icon src: "item-store-filter.png" %} icon by the search box in the top-left
+corner of the menu. The filter menu should look something like:
+
+{% image src: "ttk-item-store-filter.png" %}
+
 ## Expanded Settings
 
 There are various settings that were introduced over the years. Below is a brief
