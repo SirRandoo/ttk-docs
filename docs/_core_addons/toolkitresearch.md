@@ -7,7 +7,7 @@ github_repository: ToolkitResearch
 ---
 
 {{ page.title }} is an addon for
-{% workshop id: site.mods.core.id, name: site.data.mods.core.name %}. This addon
+{% workshop id: site.data.mods.core.id, name: site.data.mods.core.name %}. This addon
 creates polls when you don't have an active research project. The options
 presented will are weighted a bit so modded content, and simple researches, are
 prioritized over other research options.
