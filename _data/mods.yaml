@@ -19,3 +19,9 @@ raids:
 research:
   id: 2312827542
   name: ToolkitResearch
+ccore:
+  id: 3013877477
+  name: ToolkitCore
+cttk:
+  id: 3013874066
+  name: Twitch Toolkit
