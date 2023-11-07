@@ -61,7 +61,10 @@ corner of the menu. The filter menu should look something like:
 There are various settings that were introduced over the years. Below is a brief
 summary of each of the settings in the expanded menu, and what they do for the
 overall mod. For more information about the settings you can read the relevant
-documentation for the purchase system that governs the setting.
+documentation for the purchase system that governs the setting. The expanded
+menu should look something like:
+
+{% image src: "ttk-item-store-expanded.png" %}
 
 ### Karma Type
 
