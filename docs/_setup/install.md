@@ -34,27 +34,10 @@ content.
 ## 1.4 and Beyond
 
 Starting with the 1.4 update for RimWorld, {{ site.data.mods.ttk.name }} and
-{{ site.data.mods.core.name }} is no longer being updated on the Steam workshop.
-You'll have to download the version created by
-[NryChan](https://github.com/harleyknd1)
-[here](https://github.com/harleyknd1/twitchtoolkit/releases). Once you've
-downloaded both {{ site.data.mods.core.name }} and
-{{ site.data.mods.ttk.name }}, you can unzip them into your mods folder. If you
-don't know where your mods folder is you can follow the steps below:
-
-1. Open your Steam library.
-2. Right-click on "RimWorld" in your library.
-3. Click "Browse local files..." under "Manage".
-
-Once you have your mods folder opened, you can unzip the zip(s) you've
-downloaded into your mods folder. Your mods folder afterwards have two folders
-labeled "{{ site.data.mods.ttk.name }}" and "{{ site.data.mods.core.name }}", or
-something similar. Both folders should also have a sub-folder named "About". If
-neither of those are true, you should move the directories around until it
-resembles this folder structure:
-
-{% include file_tree.html structure=site.data.tree.installation %}
-
-For 1.4 and up, {{ site.data.mods.utils.name }} is still highly recommended as
-it provides various fixes, quality of life improvements, and more content for
-you and your viewers.
+{{ site.data.mods.core.name }} is no longer being updated on the Steam workshop
+as only Hodl can update them due to how Ludeon set up the workshop. As a result,
+you should use the community version of
+{% workshop id: site.data.mods.ccore.id, name: site.data.mods.ccore.name %} and
+{% workshop id: site.data.mods.cttk.id, name: site.data.mods.cttk.name %} if you
+want to play on 1.4. The above load order rules still apply to the community
+version.
