@@ -54,7 +54,7 @@ callouts:
     color: green
   note:
     title: Note
-    color: purple
+    color: grey-dk2
   warning:
     title: Warning
     color: red
