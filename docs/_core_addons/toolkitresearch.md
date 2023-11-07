@@ -7,16 +7,16 @@ github_repository: ToolkitResearch
 ---
 
 {{ page.title }} is an addon for
-{% workshop id: site.data.mods.core.id, name: site.data.mods.core.name %}. This addon
-creates polls when you don't have an active research project. The options
-presented will are weighted a bit so modded content, and simple researches, are
-prioritized over other research options.
+{% workshop id: site.data.mods.ccore.id, name: site.data.mods.ccore.name %}.
+This addon creates polls when you don't have an active research project. The
+options presented will are weighted a bit so modded content, and simple
+researches, are prioritized over other research options.
 
 This addon was written prior to the creation of {{ site.data.mods.polls.name }}.
 This means that it's not a hard requirement that you use
 {{ site.data.mods.polls.name }} in order for the addon to function, but it's
 strongly advised. Should you chose to not use {{ site.data.mods.polls.name }},
-polls created by this addon **will** clash with {{ site.data.mods.ttk.name }}'s
+polls created by this addon **will** clash with {{ site.data.mods.cttk.name }}'s
 polls. You can get around this by using a {% mono # %} before the option number
 you're trying to vote for like: {% mono #1 %}
 {: .note}

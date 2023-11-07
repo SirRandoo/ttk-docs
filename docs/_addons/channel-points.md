@@ -7,9 +7,9 @@ github_repository: Toolkit---ChannelPoints
 ---
 
 {{ page.title }} is an addon for
-{% workshop id: site.data.mods.ttk.id, name: site.data.mods.ttk.name %}. This
+{% workshop id: site.data.mods.cttk.id, name: site.data.mods.cttk.name %}. This
 addon gives viewers the ability to convert their channel points into
-{{ site.data.mods.ttk.name }}'s currency through channel redeems. The settings
+{{ site.data.mods.cttk.name }}'s currency through channel redeems. The settings
 menu for the addon will look something like this:
 
 {% image
@@ -27,7 +27,7 @@ checkbox).
 
 The text in this field is used by the addon whenever a viewer redeems a reward
 linked to the addon. It simply states something along the lines of "Thank you
-for converting your {% mono P %} to {{ site.data.mods.ttk.name }} coins!",
+for converting your {% mono P %} to {{ site.data.mods.cttk.name }} coins!",
 where {% mono P %} is the text in the field.
 
 ## Rewards
