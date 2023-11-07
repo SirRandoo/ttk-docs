@@ -14,11 +14,11 @@ prioritized over other research options.
 
 This addon was written prior to the creation of {{ site.data.mods.polls.name }}.
 This means that it's not a hard requirement that you use
-{{ site.data.mods.polls.name }} in order for the addon to function. Should you
-chose to not use {{ site.data.mods.polls.name }}, polls created by this addon
-**will** clash with {{ site.data.mods.ttk.name }}'s polls. You can get around
-this by using a {% mono # %} before the option number you're trying to vote
-for like: {% mono #1 %}
+{{ site.data.mods.polls.name }} in order for the addon to function, but it's
+strongly advised. Should you chose to not use {{ site.data.mods.polls.name }},
+polls created by this addon **will** clash with {{ site.data.mods.ttk.name }}'s
+polls. You can get around this by using a {% mono # %} before the option number
+you're trying to vote for like: {% mono #1 %}
 {: .note}
 
 We won't go over the settings menu for this addon as it has descriptions of what
