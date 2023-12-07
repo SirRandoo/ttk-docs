@@ -1,0 +1,156 @@
+{"0": {
+    "doc": "Installation",
+    "title": "Installation",
+    "content": " ",
+    "url": "/ttk-docs/setup/install",
+    
+    "relUrl": "/setup/install"
+  },"1": {
+    "doc": "Installation",
+    "title": "1.3 and Below",
+    "content": "Twitch Toolkit can install be installed by simply subscribing to the mod on the Steam workshop, as well as its dependencies ToolkitCore and Harmony. All mods can be ordered automatically by clicking “Auto-sort mods” in RimWorld’s mod config, but generally they should be closer to the bottom of your mod list. In the end your load order should look something along the lines of: . | Harmony | RimWorld | DLCs | Other mods | ToolkitCore | Twitch Toolkit | ToolkitUtils | . Ensuring Twitch Toolkit is towards the bottom should help alleviate any issues where the mod can’t properly find content due to other mods creating content at startup, or general weirdness that may occur due to how RimWorld loads modded content. ",
+    "url": "/ttk-docs/setup/install#13-and-below",
+    
+    "relUrl": "/setup/install#13-and-below"
+  },"2": {
+    "doc": "Installation",
+    "title": "1.4 and Beyond",
+    "content": "Starting with the 1.4 update for RimWorld, Twitch Toolkit and ToolkitCore is no longer being updated on the Steam workshop as only Hodl can update them due to how Ludeon set up the workshop. As a result, you should use the community version of ToolkitCore and Twitch Toolkit if you want to play on 1.4. The above load order rules still apply to the community version. ",
+    "url": "/ttk-docs/setup/install#14-and-beyond",
+    
+    "relUrl": "/setup/install#14-and-beyond"
+  },"3": {
+    "doc": "Setting Up ToolkitCore",
+    "title": "Setting Up ToolkitCore",
+    "content": "Setting up ToolkitCore is fairly straightforward. The first thing you’ll need to do is navigate to ToolkitCore’s settings menu. It should look something like this: . The first thing you might’ve noticed is that the settings menu is broken up into two different sections: Channel details, and connection. These sections are explained further in their relevant section below. ",
+    "url": "/ttk-docs/setup/toolkitcore",
+    
+    "relUrl": "/setup/toolkitcore"
+  },"4": {
+    "doc": "Setting Up ToolkitCore",
+    "title": "Channel Details",
+    "content": "This section is used to tell the mod which account to connect to Twitch with, and which channel to listen for chat messages. There are a total of 3 different text fields you need to fill out to get the mod connected to Twitch: . While you may use any account you want, you can only use an account you can log into on the Twitch website with. This means that you cannot use accounts like nightbot, streamelements, streamlabs, moobot, etc.. | Bot username | OAuth token | Channel | . Bot Username . This text field is where you would put the username of the account on Twitch. While this field is somewhat unimportant since Twitch uses the username associated with the OAuth token, it’s still a good idea to put something here as other parts of the mod may use this field to display certain information. Earlier version of Twitch Toolkit supported using links as a username, but the current version of Twitch Toolkit does not. You will have to put in the username of the account the token was generated for, or the mod will not work properly if at all. OAuth Token . This text field is the important bit that allows the mod to connect to Twitch. You can click the “New OAuth token” button near the field if you don’t already have one. You can either manually paste it into the text field by clicking the “Show” button, or you can have the mod fill in the field from your clipboard by clicking the “Paste from clipboard” button. Clicking the “New OAuth Token” will take you to a convenient website that will generate a token for the Twitch account you’re currently logged into. This website isn’t affiliated with Twitch Toolkit, or its developers, and only serves as a user-friendly way of creating a token. In the end you should have a bunch of nonsensical text that starts with oauth:, which you should paste into the mod’s settings menu (including the oauth: portion). Channel . This text field is where you’ll type in the username of the channel you want the bot to listen to. You can put any channel you own, or otherwise have permission to use for the bot. Earlier version of Twitch Toolkit supported using links as a channel, but the current version of Twitch Toolkit does not. You will have to put in the username of the channel you’re trying to get the mod to use, or the mod will not work properly if at all. ",
+    "url": "/ttk-docs/setup/toolkitcore#channel-details",
+    
+    "relUrl": "/setup/toolkitcore#channel-details"
+  },"5": {
+    "doc": "Setting Up ToolkitCore",
+    "title": "Connection",
+    "content": "Settings in this section affect how the bot reads chat messages, whether to connect on startup, and whether to send a connection message. The latter two are self-explanatory and won’t be covered in this documentation. The important settings are the whisper settings: . | Allow viewers to whisper | Force viewers to whisper | . The first setting (“Allow viewers to whisper”) determines whether the bot will also read any messages whispered to it. This means that any command whispered to the bot will also run the code associated with said command. However this does not mean the bot will respond to a whisper as a whisper message. Whispering users on Twitch is heavily limited and only allows for a certain number of unique users to be whispered within a given day. For the exact number of users, you can review the documentation for whispering here. The second setting (“Force viewers to whisper”) determines whether the bot will only handle messages sent through whispers. With this setting on no messages sent through the channel’s chat will be processed. If viewers are forced to whisper, but whispers aren’t enabled in the bot’s settings, viewers will not be able to use any commands. This means that you need both settings enabled if you want to force viewers to whisper the bot. ",
+    "url": "/ttk-docs/setup/toolkitcore#connection",
+    
+    "relUrl": "/setup/toolkitcore#connection"
+  },"6": {
+    "doc": "Setting Up Twitch Toolkit",
+    "title": "Setting Up Twitch Toolkit",
+    "content": "Setting up Twitch Toolkit can be a fairly arduous task as fine tuning its settings to your own personal preferences can be a series of trial and error that can span hours to months. The hope of this documentation is that you’ll have a better sense of what each individual setting within Twitch Toolkit does, and how it may affect other systems within the mod. With all that in mind, the documentation for Twitch Toolkit will be broken up into various smaller, more manageable chunks; with some chunks being broken down further due to their complex nature. You can see a brief overview of what topics will be covered here through the sidebar or the table of contents below. ",
+    "url": "/ttk-docs/setup/twitch-toolkit/index",
+    
+    "relUrl": "/setup/twitch-toolkit/index"
+  },"7": {
+    "doc": "Stores",
+    "title": "Stores",
+    "content": "There are various types of things viewers can purchase in Twitch Toolkit (and ToolkitUtils) that range from in-game items to traits for pawns assigned to a given viewer. Due to the amount of content viewers can purchase through the mod, and ToolkitUtils, this section of the documentation will also be broken up into more specific chunks for every different category of purchasable content. ",
+    "url": "/ttk-docs/setup/twitch-toolkit/store/index",
+    
+    "relUrl": "/setup/twitch-toolkit/store/index"
+  },"8": {
+    "doc": "Item Store",
+    "title": "Setting Up the Item Store",
+    "content": " ",
+    "url": "/ttk-docs/setup/twitch-toolkit/store/items#setting-up-the-item-store",
+    
+    "relUrl": "/setup/twitch-toolkit/store/items#setting-up-the-item-store"
+  },"9": {
+    "doc": "Item Store",
+    "title": "Locating the Item Store",
+    "content": "You can find the item store by going to the settings for Twitch Toolkit, then clicking the “Store” tab. You’ll then be able to click the “Open” button beside “Items Edit” text. You’ll be shown a menu like this: . You’ll notice there are numbers scattered throughout the image above. Those numbers correspond to a the ones below, which will explain what that part of the menu does. | This is where you can search for specific items. | When “category search” is enabled, the search bar will instead search through item categories instead of their names. | This button opens up the filter menu where you can filter items. Filtering does not affect the search bar in any way, so you can search and filter at the same time! | This column is whether the item is purchasable for viewers. | This column is where the item’s name is displayed. If you’re in-game you can click this column to open the information menu about the item. The “information menu” is the menu that opens when you click the i button in certain menus, like the little menu that pops up on the bottom-left when you have an item selected. | This column is where the item’s current price is displayed. You can adjust the price of the item by typing in any number in the number field, or by using the buttons beside the field. The buttons will adjust how much they adjust the price by holding various “modifier” keys, like shift, alt, and control – you can even hold down multiple modifier keys for even more adjustments! | This column is where the item’s category is displayed. | This column is where the you can expand or collapse extended settings that didn’t quite fit into the menu. Some of these settings will only appear on certain items, but you can usually find the same 3 settings in most cases. | The “reset all” button resets all visible items to their default values. | The pencil button allows you to change the name of the item. Changing the name means that viewers have to use the new name in order to purchase the item. | . ",
+    "url": "/ttk-docs/setup/twitch-toolkit/store/items#locating-the-item-store",
+    
+    "relUrl": "/setup/twitch-toolkit/store/items#locating-the-item-store"
+  },"10": {
+    "doc": "Item Store",
+    "title": "Using the Filter Menu",
+    "content": "The filter menu for the item store allows you to filter what’s visible within the item store. You can access the filter menu by clicking the icon by the search box in the top-left corner of the menu. The filter menu should look something like: . ",
+    "url": "/ttk-docs/setup/twitch-toolkit/store/items#using-the-filter-menu",
+    
+    "relUrl": "/setup/twitch-toolkit/store/items#using-the-filter-menu"
+  },"11": {
+    "doc": "Item Store",
+    "title": "Expanded Settings",
+    "content": "There are various settings that were introduced over the years. Below is a brief summary of each of the settings in the expanded menu, and what they do for the overall mod. For more information about the settings you can read the relevant documentation for the purchase system that governs the setting. The expanded menu should look something like: . Karma Type . The karma type setting can be used to change the karma type of the purchase. Changing the karma type for a given purchase will affect how much a viewer’s karma will increase or decrease. For more information about the karma system, and how it affects viewers, you can read the relevant documentation for it here. Other variants of this setting can be found in items that match certain conditions. When these conditions are met, a new setting unique to a specific type of purchase will be visible. Below are a list of those conditions and the setting that becomes visible when said condition is met: . | Condition | Setting | . | Apparel | Karma type for wearing | . | Consumables | Karma type for using | . | Weapons | Karma type for equipping | . Purchase Weight . The purchase weight setting can be used to change how much a single item weights in regards to karma calculations. An item with a higher weight will more drastically affect a viewer’s karma when bought, while an item with a lower weight will less drastically affect a viewer’s karma when bought. For more information about the karma system, and how it affects viewers, you can read the relevant documentation for it here. Quantity Limit . The quantity limit setting can be used to change how many items a viewer can buy at once. Any purchase made with a quantity higher than the limit will still succeed, but with the quantity lowered to the limit. This means that if an item has a limit of 30, and a viewer wants to purchase 90, the purchase will succeed and they will only purchase 30. As this setting directly affects how many items a viewer can buy, it can clash with the minimum amount of coins a viewer has to spend in order to purchase anything from the store. If the minimum amount is 50 coins, and an item that costs 49 coins has a quantity limit of 1, viewers will not be able to purchase said item until one of the two settings are adjusted to compensate for the other. ",
+    "url": "/ttk-docs/setup/twitch-toolkit/store/items#expanded-settings",
+    
+    "relUrl": "/setup/twitch-toolkit/store/items#expanded-settings"
+  },"12": {
+    "doc": "Item Store",
+    "title": "Item Store",
+    "content": " ",
+    "url": "/ttk-docs/setup/twitch-toolkit/store/items",
+    
+    "relUrl": "/setup/twitch-toolkit/store/items"
+  },"13": {
+    "doc": "Settings",
+    "title": "Settings",
+    "content": " ",
+    "url": "/ttk-docs/setup/twitch-toolkit/store/settings",
+    
+    "relUrl": "/setup/twitch-toolkit/store/settings"
+  },"14": {
+    "doc": "Channel Points",
+    "title": "Channel Point Name",
+    "content": "The text in this field is used by the addon whenever a viewer redeems a reward linked to the addon. It simply states something along the lines of “Thank you for converting your P to Twitch Toolkit coins!”, where P is the text in the field. ",
+    "url": "/ttk-docs/addons/channel-points#channel-point-name",
+    
+    "relUrl": "/addons/channel-points#channel-point-name"
+  },"15": {
+    "doc": "Channel Points",
+    "title": "Rewards",
+    "content": "Moving on back to the top half we can see 6 columns named: . | Name | UUID | Amount | Auto | Enable | Delete | . Name . The “name” column is the name of the redeem. This value isn’t significant to the viewer, and only serves as a way of identifying the associated UUID and reward amount; you could even leave it blank if you don’t need a name. UUID . The “UUID” column, which stands for Universally Unique Identifier, is where you put the id of the channel point reward on Twitch. You can get the id for a channel point reward by clicking the accompanying . Amount . The “amount” column is the amount of Twitch Toolkit coins when the viewer redeems the channel point reward. This field can be any amount, but the general trend is the amount of coins a viewer receives is double what they spent on the redeem. For example, if a viewer redeems a 5000 channel point reward, the viewer would be given 10000 coins for use in Twitch Toolkit. Auto . The “auto” button will automatically populate the UUID field for the given entry with the next channel point redeem redeemed in the channel. Enable . The “enable” button determines whether the associated channel point redeem will award viewers with Toolkit coins when redeemed. This means that if an entry is disabled, but the redeem on Twitch isn’t, viewers will not get coins should they redeem the associated channel point redeem. Delete . The “delete” button will delete the entry, but not the redeem on Twitch. If you do delete a channel point redeem in the mod’s menu, you should also delete the redeem on Twitch to ensure viewers don’t use something that doesn’t work. ",
+    "url": "/ttk-docs/addons/channel-points#rewards",
+    
+    "relUrl": "/addons/channel-points#rewards"
+  },"16": {
+    "doc": "Channel Points",
+    "title": "Channel Points",
+    "content": "Channel Points is an addon for Twitch Toolkit. This addon gives viewers the ability to convert their channel points into Twitch Toolkit’s currency through channel redeems. The settings menu for the addon will look something like this: . The first thing you might’ve noticed is the important note at the top of the settings menu. What this means is every channel point redeem you create that you want this mod to use must require a message to be sent along side it. This is due to the way this addon functions internally. With that note out of the way, we’ll move on down to the bottom half of the menu (skipping the debug checkbox). ",
+    "url": "/ttk-docs/addons/channel-points",
+    
+    "relUrl": "/addons/channel-points"
+  },"17": {
+    "doc": "Daily Lootboxes",
+    "title": "Daily Lootboxes",
+    "content": "Daily Lootboxes is an addon for Twitch Toolkit. This addon gives viewers a configurable amount of lootboxes when they chat in your stream for the first time a day. Each lootbox award a random amount of coins depending on the maximum and minimum amount of coins set within the addon’s settings. The settings menu should look something like this: . This documentation won’t go over the settings for the addon since they’re fairly self-explanatory, but in the event you do need help with the addon you can join the Twitch Toolkit discord for support. ",
+    "url": "/ttk-docs/addons/lootboxes",
+    
+    "relUrl": "/addons/lootboxes"
+  },"18": {
+    "doc": "ToolkitAddon - More Stuff",
+    "title": "ToolkitAddon - More Stuff",
+    "content": "ToolkitAddon - More Stuff is an addon for Twitch Toolkit. This addon makes events from other mods purchasable, provides a convenient command to remove items from your map you don’t care about, and alerts for when Twitch Toolkit’s connection changes. For a full list of mods this addon adds integration for, please refer to the mod’s workshop page, the mod’s GitHub repository, or the discord. ",
+    "url": "/ttk-docs/addons/more-stuff",
+    
+    "relUrl": "/addons/more-stuff"
+  },"19": {
+    "doc": "ToolkitPolls",
+    "title": "ToolkitPolls",
+    "content": "ToolkitPolls is an addon for ToolkitCore. This addon provides a framework for other addons to create polls, and provides an adapter for converting Twitch Toolkit polls into ToolkitPolls polls. This means that you can use any ToolkitCore addons that have polls, like ToolkitResearch, without having their polls clash with Twitch Toolkit’s polls. For this reason, it’s highly recommended you also install this addon if you have clashing polls. We won’t go over the settings menu for this addon as it has descriptions of what each setting does, but here’s a picture of the settings menu for an idea of what you can configure within the addon: . ",
+    "url": "/ttk-docs/core_addons/toolkitpolls",
+    
+    "relUrl": "/core_addons/toolkitpolls"
+  },"20": {
+    "doc": "ToolkitRaids",
+    "title": "ToolkitRaids",
+    "content": "ToolkitRaids is an addon for ToolkitCore. This addon creates raids when a streamer raids another streamer. Viewers can join these raids and appear in-game as a raider. While viewers aren’t able to modify, or otherwise inspect their raiders, they can still watch an in-game character attempt to raid the colony. We won’t go over the settings menu for this addon as it has descriptions of what each setting does, but here’s a picture of the settings menu for an idea of what you can configure within the addon: . ",
+    "url": "/ttk-docs/core_addons/toolkitraids",
+    
+    "relUrl": "/core_addons/toolkitraids"
+  },"21": {
+    "doc": "ToolkitResearch",
+    "title": "ToolkitResearch",
+    "content": "ToolkitResearch is an addon for ToolkitCore. This addon creates polls when you don’t have an active research project. The options presented will are weighted a bit so modded content, and simple researches, are prioritized over other research options. This addon was written prior to the creation of ToolkitPolls. This means that it’s not a hard requirement that you use ToolkitPolls in order for the addon to function, but it’s strongly advised. Should you chose to not use ToolkitPolls, polls created by this addon will clash with Twitch Toolkit’s polls. You can get around this by using a # before the option number you’re trying to vote for like: #1 . We won’t go over the settings menu for this addon as it has descriptions of what each setting does, but here’s a picture of the settings menu for an idea of what you can configure within the addon: . ",
+    "url": "/ttk-docs/core_addons/toolkitresearch",
+    
+    "relUrl": "/core_addons/toolkitresearch"
+  }
+}
